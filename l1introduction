@@ -1,0 +1,26 @@
+          Python history
+Python 2.0 was first released in 2000. Its latest version, 2.7, was released in 2010.
+Python 3.0 was released in 2008. Its newest version, 3.6, was released in 2016, and version 3.7 is currently in development.
+Although Python 2.7 is still widely used, Python 3 adoption is growing quickly. In 2016, 71.9% of projects used Python 2.7,
+but by 2017, it had fallen to 63.7%. This signals that the programming community is turning to Python 3–albeit gradually–when 
+developing real-world applications.
+
+  Differences between 2X and 3X
+  
+  python 2                                    python 3
+  
+  Strings are stored in               Text strings are unicode
+  ASCII by default                            by default
+  
+  5/2=2                                 5/2=2.5
+  
+  print"hi"                             print("hi")
+  
+  
+  Tools
+  
+ 1-Beeware
+ BOA constructor
+ PyDEv for eclipse
+ PyCharm
+ WxCharm
