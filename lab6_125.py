@@ -1,22 +1,30 @@
-a=input("enter string")
-
-class validate:
-    c1=0;c2=0;c3=0;
-    for i in a:
-        if i=='(':
-            c1+=1
-        elif i==')':
-            c1-=1
-        elif i=='{':
-            c2+=1
+def check(s):
+    stack=[]
+    stack.append('$')
+    for i in s:
+        if i=='{' or i=='[' or i=='(':
+            stack.append(i);
         elif i=='}':
-            c2-=1
-        elif i=='[':
-            c3+=1
+            if stack.pop()=='{':
+                pass
+            else:
+                return False
         elif i==']':
-            c3-=1
-    if c1==0 and c2==0 and c3==0:
-        print("valid parenthesis")
+            if stack.pop()=='[':
+                pass
+            else:
+                return False
+        elif i==')':
+            if stack.pop()=='(':
+                pass
+            else:
+                return False
+
+    if(stack.pop()=='$'):
+        return True
     else:
-        print("invalid parenthesis")
+        return False
+a=input("enter string Parenthesis")
+print(check(a))
+    
         
